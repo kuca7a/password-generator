@@ -12,6 +12,8 @@ body {
     justify-content: center;
     padding: 10px;
     min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 h2 {
@@ -24,8 +26,9 @@ h2 {
 }
 
 .option-slider{
+    margin-top: 10px;
     padding: 10px;
-    height: 60px;
+    height: 66px;
 }
 
 p{
@@ -42,6 +45,7 @@ p{
 .slider{
     cursor: pointer;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .checkbox{
@@ -90,6 +94,7 @@ input[type=checkbox] {
 .btn-large {
     display: block;
     width: 100%;
+    float: inline-end;
 }
 
 .btn-large:hover{
