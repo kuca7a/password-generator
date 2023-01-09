@@ -48,6 +48,10 @@ p{
     cursor: pointer;
 }
 
+input[type=checkbox] {
+    float: right;
+}
+
 .result-container{
     background-color: #22223b;
     display: flex;
