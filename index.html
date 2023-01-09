@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ed0a23cc82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="fa-solid fa-clipboard"></i>
+        </button>
+      </div>
+
+      <div class="options">
+        <div class="option-slider">
+          <input
+            type="range"
+            min="1"
+            max="20"
+            value="10"
+            class="slider"
+            id="password-range"
+          />
+          <p>Password Length: <span id="password-length"></span></p>
+        </div>
+
+        <div class="option">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="uppercase"
+            value="uppercase"
+          />Include Uppercase Letters<br />
+        </div>
+
+        <div class="option">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="lowercase"
+            value="lowercase"
+          />Include Lowercase Letters<br />
+        </div>
+
+        <div class="option">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="numbers"
+            value="numbers"
+          />Include Numbers<br />
+        </div>
+
+        <div class="option">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="symbols"
+            value="symbols"
+          />Include Symbols<br />
+        </div>
+      </div>
+
+      <button class="btn btn-large" id="generate">Generate Password</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
